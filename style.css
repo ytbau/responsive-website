@@ -57,6 +57,7 @@ body{
     background-color: #585858;
     max-height: 100px;
     position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,13 +73,18 @@ body{
 .menu li{
     padding: 10px;
     margin: 20px 10px 20px 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: 2px solid #808080;
     color: white;
     text-align: center;
     cursor: pointer;
+    transition: 0.2s linear;
 }
 
+.menu li:hover{
+    background-color: #808080;
+    transition: 0.2s linear;
+}
 .menu li a{
     text-decoration: none;
     color: white;
@@ -130,4 +136,5 @@ body{
 .card p{
     font-size: 0.95rem;
     padding: 0 20px 20px 10px;
+    text-align: justify;
 }
