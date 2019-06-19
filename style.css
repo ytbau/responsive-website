@@ -41,11 +41,10 @@ body{
     background-image: url('https://picsum.photos/id/239/1739/1391');
 }
 
+/* Header with parallax scrolling effect */
 .header{
     background-image: url('https://picsum.photos/id/213/4928/3264');
-    /* Set a specific height */
     min-height: 400px; 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,8 +89,8 @@ body{
 }
 
 .menu li{
-    padding: 10px;
-    margin: 20px 10px 20px 10px;
+    padding: 5px 10px;
+    margin: 20px 10px;
     font-size: 1.3rem;
     border: 2px solid #808080;
     background-color: #585858;
