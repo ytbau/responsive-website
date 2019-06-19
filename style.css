@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fonts*/
+@font-face {
+    font-family: 'Domine';
+    src: url('/fonts/Domine/Domine-Regular.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Domine/Domine-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/Roboto-Regular.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Roboto/Roboto-Regular.ttf')  format('truetype');
+}
+
+
+body{
+    background-color: white;
+    font-size: 16px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-image: url('https://picsum.photos/id/213/4928/3264');
+    /* Set a specific height */
+    min-height: 400px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.title{
+    font-size: 5rem;
+    color: white;
+    font-family: 'Domine';
+}
+
+.desc{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.sticky-navbar, .menu{
+    background-color: #585858;
+    max-height: 100px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto';
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    font-size: 1.5rem;
+    border: 2px solid #808080;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.card{
+    background-color: rgb(240, 240, 240);
+    width: 30%;
+    flex: 1;
+    margin: 5% 2%;
+}
+
+.card-img{
+    background-size: cover;
+    width: 100%;
+    min-height: 180px;
+    background-position: center;
+}
+
+.img-1{
+    background-image: url('https://picsum.photos/id/219/5184/3456');
+}
+
+.img-2{
+    background-image: url('https://picsum.photos/id/222/1800/977');
+}
+
+.img-3{
+    background-image: url('https://picsum.photos/id/225/1500/979');
+}
+
+.card-title{
+    padding: 20px 0 10px 10px;
+    font-size: 1.2rem;
+    color: darkolivegreen;
+    font-family: 'Domine';
+    text-align: left;
+    font-weight: 800;
+}
+.card p{
+    font-size: 0.95rem;
+    padding: 0 20px 20px 10px;
+}
