@@ -24,6 +24,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*images*/
+.img-1{
+    background-image: url('https://picsum.photos/id/219/5184/3456');
+}
+
+.img-2{
+    background-image: url('https://picsum.photos/id/222/1800/977');
+}
+
+.img-3{
+    background-image: url('https://picsum.photos/id/225/1500/979');
+}
+
+.img-4{
+    background-image: url('https://picsum.photos/id/239/1739/1391');
+}
+
 .header{
     background-image: url('https://picsum.photos/id/213/4928/3264');
     /* Set a specific height */
@@ -45,6 +62,7 @@ body{
     font-size: 5rem;
     color: white;
     font-family: 'Domine';
+    text-shadow: 2px 1px 2px #585858;
 }
 
 .desc{
@@ -53,6 +71,7 @@ body{
     font-family: 'Roboto';
 }
 
+/*menu navbar*/
 .sticky-navbar, .menu{
     background-color: #585858;
     max-height: 100px;
@@ -75,21 +94,23 @@ body{
     margin: 20px 10px 20px 10px;
     font-size: 1.3rem;
     border: 2px solid #808080;
+    background-color: #585858;
     color: white;
     text-align: center;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.2s background-color linear;
 }
 
 .menu li:hover{
     background-color: #808080;
-    transition: 0.2s linear;
+    transition: 0.2s background-color linear;
 }
 .menu li a{
     text-decoration: none;
     color: white;
 }
 
+/*row*/
 .row{
     display: flex;
     flex-direction: row;
@@ -99,11 +120,32 @@ body{
     padding: 20px 10px 20px 10px;
 }
 
-.card{
+.row:nth-child(even){
     background-color: rgb(240, 240, 240);
+}
+
+.row:nth-child(even) > .card{
+    background-color: #ffffff;
+}
+
+.row:nth-child(odd) > .card{
+    background-color: rgb(240, 240, 240);
+}
+
+/*card*/
+.card{
     width: 30%;
     flex: 1;
     margin: 5% 2%;
+    box-shadow: 2px 2px 3px #e7e7e7;
+    transition: 0.2s box-shadow linear;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 5px #d4d4d4;
+    transition: 0.1s box-shadow linear;
 }
 
 .card-img{
@@ -111,18 +153,6 @@ body{
     width: 100%;
     min-height: 180px;
     background-position: center;
-}
-
-.img-1{
-    background-image: url('https://picsum.photos/id/219/5184/3456');
-}
-
-.img-2{
-    background-image: url('https://picsum.photos/id/222/1800/977');
-}
-
-.img-3{
-    background-image: url('https://picsum.photos/id/225/1500/979');
 }
 
 .card-title{
@@ -137,4 +167,58 @@ body{
     font-size: 0.95rem;
     padding: 0 20px 20px 10px;
     text-align: justify;
+    line-height: 1.6em;
+}
+
+.center{
+    text-align: center;
+}
+
+/*buttons*/
+.btn{
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    width: auto;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    border-top: 0;
+    border-bottom: 4px solid transparent;
+    transition: 0.09s border linear;
+}
+
+.btn:hover{
+    border: 2px solid rgba(0,0,0,.3);
+    border-top: 0;
+    border-bottom: 4px solid rgba(0,0,0,.3);
+    transition: 0.09s border linear;
+}
+.btn-green{
+    background-color: darkolivegreen;
+    color: whitesmoke;
+}
+
+.btn-blue{
+    background-color: cornflowerblue;
+}
+
+.btn-red{
+    background-color: indianred;
+}
+
+.btn-right{
+    align-self: flex-end;
+}
+
+.btn-left{
+    align-self: flex-start;
+}
+
+.btn-center{
+    align-self: center;
 }
