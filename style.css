@@ -3,19 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Fonts*/
-@font-face {
-    font-family: 'Domine';
-    src: url('/fonts/Domine/Domine-Regular.ttf'); /* IE9 Compat Modes */
-    src: url('/fonts/Domine/Domine-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto/Roboto-Regular.ttf'); /* IE9 Compat Modes */
-    src: url('/fonts/Roboto/Roboto-Regular.ttf')  format('truetype');
-}
-
 
 body{
     background-color: white;
@@ -41,6 +28,9 @@ body{
     background-image: url('https://picsum.photos/id/239/1739/1391');
 }
 
+.img-5{
+    background-image: url('https://picsum.photos/id/365/5616/3744');
+}
 /* Header with parallax scrolling effect */
 .header{
     background-image: url('https://picsum.photos/id/213/4928/3264');
@@ -220,4 +210,91 @@ body{
 
 .btn-center{
     align-self: center;
+}
+
+.img-xl{
+    min-height: 300px;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+/* contact form */
+#contact{
+    background-image: url('https://picsum.photos/id/377/4884/3256');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.contact-form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
+}
+
+.inline div{
+    width: 33%;
+    flex: 1;
+
+}
+.form-item{
+    margin: 10px 20px;
+}
+
+.form-item legend{
+    margin: 5px 0;
+    font-family: 'Domine', serif;
+}
+
+.form-item input, .form-item textarea{
+    background-color: transparent;
+    border: 3px solid #e7e7e7;
+    border-radius: 5px;
+    transition: 0.09s border linear;
+    padding: 5px 20px 10px 3px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.form-item input:focus, 
+.form-item textarea:focus{
+    border: 3px solid cornflowerblue;
+}
+
+.form-item input::placeholder, 
+.form-item textarea::placeholder{
+    color: white;
+}
+
+#message{
+    width: 100%;
+}
+
+.footer{
+    background-color: #585858;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
 }

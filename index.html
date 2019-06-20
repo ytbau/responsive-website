@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Stylesheet-->
     <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Domine|Roboto&display=swap" rel="stylesheet"> 
+
     <title>Responsive Website</title>
 </head>
 <body>
@@ -12,9 +16,9 @@
         <ul class="menu">
             <li><a href="#homepage">Homepage</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">External</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#map">Find Us</a></li>
         </ul>
     </navbar>
     <header class="header">
@@ -56,7 +60,38 @@
             <button class="btn btn-blue btn-right">Continue Reading</button>
         </div>
     </div>
-    
+    <div id="blog" class="row" >
+        <div class="card">
+            <div class="card-img img-5 img-xl"></div>
+            <div class="card-title center"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum eveniet laudantium voluptatibus quos voluptas nostrum doloremque quisquam! Labore, porro. Ea nam esse laboriosam odit laudantium rem nesciunt ducimus! Cumque error praesentium quam totam quod iure delectus voluptatem consectetur quibusdam!</p>
+            <p>Obcaecati ducimus, alias odit placeat nulla nam aperiam rem, dignissimos dolorum debitis accusantium? Maxime nulla a dicta aperiam molestiae laboriosam doloribus in corporis minus quisquam, illum ab dolorem unde reprehenderit tenetur. Provident incidunt fuga molestiae beatae dolores itaque doloremque nihil!</p>
+            <p>Nostrum nemo odit quos repellat dolorum mollitia itaque facere, quo, sint possimus sed earum debitis perspiciatis ullam. Architecto delectus ipsam iusto placeat molestias corrupti dolorum rerum aspernatur. Ducimus, odio. Repellendus quisquam asperiores fuga ullam quas doloribus fugiat praesentium fugit quam.</p>
+            <button class="btn btn-green btn-right">Read the blog</button>
+        </div>
+    </div>
+    <div id="contact" class="row">
+        <form class="contact-form" action="">
+            <div class="container inline">
+                <div class="form-item">
+                    <legend for="name">Name</legend>
+                    <input name="name" type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-item">
+                    <legend for="company-name">Company Name</legend>
+                    <input name="company-name" type="text" placeholder="Enter your company name">
+                </div>
+            </div>
+            <div class="container form-item">
+                <legend for="message">Message</legend>
+                <textarea id="message" name="message" rows="4" placeholder="Enter message here"></textarea>
+            </div>  
+            <button type="submit" class="btn btn-blue btn-block">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">Copyright &copy; by username.domain.com</footer>
+
 
 </body>
 </html>
